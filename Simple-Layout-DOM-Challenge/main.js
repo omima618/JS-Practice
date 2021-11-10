@@ -43,7 +43,8 @@ for (let i = 0; i < listItem.length; i++) {
 // create main section & add it after the header
 let mainSec = document.createElement("section");
 theHeader.after(mainSec);
-mainSec.style.cssText = `width:100%; height:505px; padding:10px; display:flex; justify-content:space-evenly; align-items:center; flex-wrap:wrap; box-sizing:border-box`;
+mainSec.style.cssText = `width:100%; padding:10px; display:flex; justify-content:space-evenly; align-items:center; flex-wrap:wrap; box-sizing:border-box`;
+mainSec.style.height = "calc(100vh - 120px)";
 // add products with style in mainSec
 let product = [];
 product.length = 15;
