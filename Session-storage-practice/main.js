@@ -4,7 +4,7 @@ let age = document.getElementById("age");
 let track = document.getElementById("track");
 let submit = document.querySelector(".submit");
 getDataFromSessionStr();
-submit.addEventListener("click", addDataToSessionStr);
+document.forms[0].addEventListener("input", addDataToSessionStr);
 function addDataToSessionStr() {
     window.sessionStorage.setItem("user", `${user.value}`);
     window.sessionStorage.setItem("email", `${mail.value}`);

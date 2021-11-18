@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+.container h3 {
+    background-color: #eee;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.container h3::after {
+    content: "+";
+    position: absolute;
+    color: #333;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.container h3:hover,
+.container .active {
+    background-color: #333;
+    color: white;
+    padding: 20px 0 20px 40px;
+}
+.container .active::after {
+    content: "-";
+    font-size: 25px;
+}
+.container h3:hover::after,
+.container .active::after {
+    color: inherit;
+}
+.container .active::before {
+    content: "\27A4";
+    color: inherit;
+    font-size: 15px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.container .text {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.5s;
+}
+.container .text p {
+    padding: 15px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #333;
+}

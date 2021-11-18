@@ -1,0 +1,40 @@
+div {
+    position: relative;
+    width: fit-content;
+    margin: 100px auto;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+input {
+    border: none;
+    border-bottom: 5px #def4e4 solid;
+    outline: none;
+    background-color: #def4e441;
+    width: 300px;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #045242;
+}
+.progress {
+    position: absolute;
+    width: 0;
+    top: 60px;
+    left: 0;
+    height: 5px;
+    background-color: #1bbd9c;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.count {
+    font-size: 17px;
+    display: block;
+    width: fit-content;
+    margin: 10px 0 0 auto;
+    color: #045242;
+}
+.full{
+    color: red;
+}

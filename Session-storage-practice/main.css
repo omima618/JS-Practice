@@ -28,6 +28,7 @@ label {
     width: 90%;
     margin: 0 auto 15px;
 }
+
 input,
 select {
     padding: 10px;
@@ -37,7 +38,7 @@ select {
     border: none;
     outline: none;
     background-color: #9ebaf34b;
-    margin: 0 auto;
+    margin: 0 auto 15px;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -49,6 +50,7 @@ select {
     width: 130px;
     font-size: 18px;
     margin-top: 30px;
+    margin-bottom: 0;
     background-color: white;
     box-shadow: 0 0 10px #9ebaf3b4;
     color: #4a86ff;
